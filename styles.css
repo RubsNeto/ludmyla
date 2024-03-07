@@ -126,7 +126,11 @@ section{
 .imagem-principal{
     width: 50vh;
     border-radius: 15px;
-    box-shadow: 0 0 10px 5px #001b4e;
+    transition: .5s;
+}
+
+.imagem-principal:hover{
+    box-shadow: 0 0 50px 5px #001b4e;
 }
 
 .home-text h1{
@@ -396,3 +400,83 @@ header.sticky{
     bottom: 48%;
     opacity: 1;
 }
+
+
+
+.services{
+    background-color: var(--bg-section1);
+}
+
+
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.row{
+    background: var(--bg-section2);
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+    padding: 45px 45px 45px 45px;
+    transition: ease .45s;
+    cursor: pointer;
+}
+
+
+.s img{
+    height: 65px;
+    width: 65px;
+    background: #f75124;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.s.s-one img{
+    background: #baebcd;
+}
+
+.s.s-two img{
+    background: #d9d1fa;
+}
+.s.s-three img{
+    background: #baebcd;
+}
+.s.s-four img{
+    background: #faedce;
+}
+
+.row h3{
+
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 2px
+}
+
+.row h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+
+.row p{
+    font-size: var(--p-font);
+    color:var(--secound-color);
+    line-height: 28px;   
+}
+
+.row:hover{
+    transition: .5s;
+    will-change: transform;
+    scale: (1.1);
+    transform: perspective(1000px) rotateX(2deg) rotateY(5deg) scale3d(1.05, 1.05,1.05);
+    box-shadow: 0 0 10px 5px var(--bright); 
+}
+
+
+
+
+
