@@ -363,7 +363,8 @@ header.sticky{
 }
 
 .layer:hover{
-    background: linear-gradient(#1a1a1a00 0% ,  #045e9280);
+    background: linear-gradient(#01273d80 0% ,  #045e9280);
+    /*background: linear-gradient(#1a1a1a00 0% ,  #045e9280);*/
 }
 
 .layer h3{
@@ -431,25 +432,12 @@ header.sticky{
 .s img{
     height: 65px;
     width: 65px;
-    background: #f75124;
+    background: var(--bright);
     padding: 15px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.s.s-one img{
-    background: #baebcd;
-}
-
-.s.s-two img{
-    background: #d9d1fa;
-}
-.s.s-three img{
-    background: #baebcd;
-}
-.s.s-four img{
-    background: #faedce;
-}
 
 .row h3{
 
