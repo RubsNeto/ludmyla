@@ -1793,6 +1793,9 @@ body.no-scroll {
         justify-content: center;
         align-items: center;
     }
+    .scroll-indicator{
+        display: none;
+    }
     .logo {
         order: 2;
         margin-left: 0;
