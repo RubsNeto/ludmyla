@@ -399,7 +399,7 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contact-form">
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/rubensneto.016@gmail.com" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
                     </div>
@@ -412,10 +412,12 @@
                     <div class="form-group">
                         <textarea name="message" class="form-control" placeholder="Sua Mensagem" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary-btn">
+                    <button type="submit" class="btn primary-btn form-submit">
                         <span>Enviar Mensagem</span>
                         <i class='bx bx-send'></i>
                     </button>
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </div>

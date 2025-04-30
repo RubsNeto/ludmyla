@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pelo Contato | Rubens Neto</title>
+    <link rel="stylesheet" href="css/styles-new.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-content">
+            <i class='bx bx-check-circle thank-you-icon'></i>
+            <h1>Mensagem Enviada!</h1>
+            <p>Obrigado pelo seu contato. Retornarei o mais breve possível.</p>
+            <a href="index.html" class="btn primary-btn">
+                <i class='bx bx-arrow-back'></i>
+                <span>Voltar ao Portfólio</span>
+            </a>
+        </div>
+    </div>
+
+    <style>
+        .thank-you-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+        
+        .thank-you-content {
+            text-align: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 600px;
+            box-shadow: var(--shadow-lg);
+            animation: fadeInUp 0.8s forwards;
+        }
+        
+        .thank-you-icon {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            animation: zoomIn 0.5s forwards;
+        }
+        
+        .thank-you-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .thank-you-content p {
+            font-size: 1.1rem;
+            color: var(--text-color-alt);
+            margin-bottom: 30px;
+        }
+        
+        .thank-you-content .btn {
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
