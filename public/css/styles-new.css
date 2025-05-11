@@ -2164,14 +2164,37 @@ header.sticky {
 }
 
 @media (max-width: 768px) {
-    .hero-content,
+
+    header .navlist, 
+    header .download-btn {
+        display: none !important;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse !important;
+        text-align: center;
+    }
     .about-content {
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
     .hero-image {
-        order: -1;
+        margin-top: -7em;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    /* Ajustes adicionais para melhorar a aparência */
+    .hero {
+        padding-top: 80px;
+    }
+    
+    .hero-text {
+        align-items: center;
     }
     
     .stats-grid {
