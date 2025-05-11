@@ -336,7 +336,6 @@ header.sticky {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
-    min-height: 100vh;
     padding: 100px 0;
 }
 
@@ -2164,26 +2163,37 @@ header.sticky {
 }
 
 @media (max-width: 768px) {
-
+    /* Ocultar navbar em dispositivos móveis */
     header .navlist, 
     header .download-btn {
         display: none !important;
     }
-
+    
+    /* Reorganizar a seção hero para foto em cima */
     .hero-content {
-        flex-direction: column-reverse !important;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-    }
-    .about-content {
-        grid-template-columns: 1fr;
         gap: 30px;
+        padding: 20px 0;
     }
     
     .hero-image {
-        margin-top: -10em;
-        margin-bottom: 30px;
+        margin: 0 auto 20px;
     }
-
+    
+    .image-wrapper {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    
+    .hero-text {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .hero-buttons {
         justify-content: center;
     }
@@ -2191,11 +2201,37 @@ header.sticky {
     /* Ajustes adicionais para melhorar a aparência */
     .hero {
         padding-top: 80px;
+        min-height: auto;
     }
     
-    .hero-text {
-        margin-top: -6em;
-        align-items: center;
+    .title {
+        font-size: 2.2rem;
+    }
+    
+    .profession {
+        font-size: 1.1rem;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
+    .description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    /* Ajustes para a seção about em mobile */
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        order: -1;
+        margin-bottom: 30px;
     }
     
     .stats-grid {
