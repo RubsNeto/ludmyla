@@ -2180,7 +2180,7 @@ header.sticky {
     }
     
     .hero-image {
-        margin-top: -7em;
+        margin-top: -10em;
         margin-bottom: 30px;
     }
 
@@ -2194,6 +2194,7 @@ header.sticky {
     }
     
     .hero-text {
+        margin-top: -6em;
         align-items: center;
     }
     
